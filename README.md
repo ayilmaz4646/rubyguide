@@ -17,30 +17,31 @@
 	```
 	# kötü
 	def obliterate(things, gently = true, except = [], at = Time.now)
-		....
+	  ....
 	end
 	
 	# iyi
 	def obliterate(things, options = {})
-		options = {
-			gently: true, #burada kullanılan parametreler için
-			except = [],  #acıklama yazmak, ileride bu metotu kullananlar için
-			at: Time.now, #sağlıklı bir yöntem olabilir.
-		}.merge(options)
-		....
+	  options = {
+		gently: true, #burada kullanılan parametreler için
+		except = [],  #acıklama yazmak, ileride bu metotu kullananlar için
+		at: Time.now, #sağlıklı bir yöntem olabilir.
+     }.merge(options)
+     
+	  ....
 	end
 
 	```
 * Tek satırlık methot yazımlarından kaçının.
 
 	```
-		# kötü
-		def too_much; something; something_else; end
-		
-		# iyi
-		def some_method
-			...
-		end
+	# kötü
+	def too_much; something; something_else; end
+	
+	# iyi
+	def some_method
+	  ...
+	end
 	```
 ### Metot Çağrıları
 metot çağrılarında **parantez kullanın**:
