@@ -144,22 +144,21 @@ metot çağrılarında **parantez kullanın**:
 * Metot içeriği ve koşulları basit ise tek satır kullanım iyidir. Aksi takdirde 'tek satır' da yazacağım diye de b*kunu çıkarmayın.
 
 	```ruby
-	 #kötü 
- add_trebuchet_experiments_on_page(request_opts[:trebuchet_experiments_on_page]) if request_opts[:trebuchet_experiments_on_page] && !request_opts[:trebuchet_experiments_on_page].empty?
- 
- 	# güzel
- 	if request_opts[:trebuchet_experiments_on_page] &&
-       !request_opts[:trebuchet_experiments_on_page].empty?
-      
-      add_trebuchet_experiments_on_page(request_opts[:trebuchet_experiments_on_page])
-end
+	# kötü
+add_trebuchet_experiments_on_page(request_opts[:trebuchet_experiments_on_page]) if request_opts[:trebuchet_experiments_on_page] && !request_opts[:trebuchet_experiments_on_page].empty?
 	
-	# kötü - Karmaşıktır, birden çok satır ve yorum gerektiriyor :(
+	# güzel
+	if request_opts[:trebuchet_experiments_on_page] &&
+	  !request__opts[:trebuchet_experiments_on_page].empty?
+	  
+	  add_trebuchet_experiments_on_page(request_opts[:trebuchet_experiments_on_page])
+	end
+	
+	# kötü - Karmaşık. Birden çok satır ve yorum gerektiriyor :(
 	parts[i] = part.to_i(INTEGER_BASE) if !part.nil? && [0, 2, 3].include?(i)
 	
 	# güzel
 	return if reconciled?
-
 	```
 * Asla `unless` ile `else` i kullanmayınız. Olumlu durumuyla tekrardan yazın.
 
@@ -234,7 +233,7 @@ end
 	end
 	```
 
-###Ternary Operatörü
+### Ternary Operatörü
 
 Kısaltılmış if yapısı da diyebiliriz( `if` kullanılmadan :) ).
 
