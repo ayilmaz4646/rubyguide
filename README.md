@@ -41,7 +41,7 @@
 	# iyi
 	def some_method
 	  ...
-	end
+   end
 	```
 ### Metot Çağrıları
 metot çağrılarında **parantez kullanın**:
@@ -101,4 +101,92 @@ metot çağrılarında **parantez kullanın**:
 	# iyi
 	get '/v1/reservations', :id => 46352
 	
+	```
+###Koşullar
+* Eğer ` if/unless `metotunuz birden fazla satırdan oluşuyorsa (multi-line), Asla `then` kullanmayınız.
+
+	```
+	 # kötü
+	 if some_condition then
+	   ...
+	 end
+	 
+	 # iyi
+	 if some_condition
+	   ...
+	 end
+	 ```
+* Eğer `while` veya `until` metotunuz, multi-line ise Asla `do` kullanmayınız.
+
+	```ruby
+	 # kötü
+	  while x > 5 do
+	  	...
+	  end
+	  
+	  until x > 5 do
+	  	...
+	  end
+
+	 # iyi
+	 while x > 5
+	  ...
+	 end
+
+	 until x > 5
+	  ...
+	 end
+	 
+	```
+* `and`, `or`, `not` yerine `&&`, `||`, `!` kullanınız.
+* Metot içeriği ve koşulları basit ise tek satır kullanım iyidir. Aksi takdirde 'tek satır' da yazacağım diye de b*kunu çıkarmayın.
+
+	```ruby
+	 #kötü 
+ add_trebuchet_experiments_on_page(request_opts[:trebuchet_experiments_on_page]) if request_opts[:trebuchet_experiments_on_page] && !request_opts[:trebuchet_experiments_on_page].empty?
+ 
+ 	# güzel
+ 	if request_opts[:trebuchet_experiments_on_page] &&
+       !request_opts[:trebuchet_experiments_on_page].empty?
+      
+      add_trebuchet_experiments_on_page(request_opts[:trebuchet_experiments_on_page])
+end
+	
+	# kötü - Karmaşıktır, birden çok satır ve yorum gerektiriyor :(
+	parts[i] = part.to_i(INTEGER_BASE) if !part.nil? && [0, 2, 3].include?(i)
+	
+	# güzel
+	return if reconciled?
+
+	```
+* Asla `unless` ile `else` i kullanmayınız. Olumlu durumuyla tekrardan yazın.
+
+	```ruby
+	# kötü
+	unless success?
+	  puts 'failure'
+	else
+	  puts 'success'
+	end
+	
+	# iyi
+	if success?
+	  puts 'success'
+	else
+	  puts 'failure'
+	end
+	
+	```
+* `unless` metotunda, birden fazla koşul kullanmaktan kaçının.
+
+	```ruby
+	# kötü
+	unless foo? && bar?
+	   ...
+	end
+	
+	# iyi
+	if !(foo? && bar?)
+	  ...
+	end
 	```
