@@ -145,7 +145,7 @@ metot çağrılarında **parantez kullanın**:
 
 	```ruby
 	# kötü
-add_trebuchet_experiments_on_page(request_opts[:trebuchet_experiments_on_page]) if request_opts[:trebuchet_experiments_on_page] && !request_opts[:trebuchet_experiments_on_page].empty?
+	add_trebuchet_experiments_on_page(request_opts[:trebuchet_experiments_on_page]) if request_opts[:trebuchet_experiments_on_page] && !request_opts[: trebuchet_experiments_on_page].empty?
 	
 	# güzel
 	if request_opts[:trebuchet_experiments_on_page] &&
