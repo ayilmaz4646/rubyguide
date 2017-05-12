@@ -1,5 +1,6 @@
 ## Metotlar
 ### Methot Tanımları
+
 * Metotun beklediği parametre(ler) varsa, `def` ile parantez kullanın. Eğer metot bir parametre beklemiyorsa, parantez kullanmanız gerekmez.
 
 	```ruby
@@ -45,6 +46,7 @@
 	```
 
 ### Metot Çağrıları
+
 metot çağrılarında **parantez kullanın**:
 * Eğer metot bir değer döndürüyorsa
 
@@ -104,7 +106,8 @@ metot çağrılarında **parantez kullanın**:
 	
 	```
 
-###Koşullar
+### Koşullar
+
 * Eğer ` if/unless `metotunuz birden fazla satırdan oluşuyorsa (multi-line), Asla `then` kullanmayınız.
 
 	```ruby
