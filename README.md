@@ -235,10 +235,10 @@ end
 	```
 
 ###Ternary Operatörü
+
 Kısaltılmış if yapısı da diyebiliriz( `if` kullanılmadan :) ).
 
   örn:
-
   ``` 
     not > 50 ? durum = 'geçtin' : durum = 'kaldın'
   ```
@@ -282,11 +282,11 @@ Kısaltılmış if yapısı da diyebiliriz( `if` kullanılmadan :) ).
 	```
 	
 ### İç içe Koşullar
-* İç içe kullanımı önlemek ([daha fazla bilgi için][http://blog.timoxley.com/post/47041269194/avoid-else-return-early])
+* İç içe kullanımı önlemek ([daha fazla bilgi için](http://blog.timoxley.com/post/47041269194/avoid-else-return-early))
 	
 	Genel ilkeleri özetlersek:
 	* Fonksiyonun artık birşey yapamadığını gördüğünüz zaman hemen geri dönün.
-	* İç içe girintiyi farkkettiğiniz durumda, bu durumu gidermeye çalışın. Böyle yaparak kodunuzun, okunabilirlik ve anlaşılabilirliğini arttırmış olursunuz.
+	* İç içe girintiyi farkettiğiniz durumda, bu durumu gidermeye çalışın. Böyle yaparak kodunuzun, okunabilirlik ve anlaşılabilirliğini arttırmış olursunuz.
 	* Önemli akışlar, az girinti gerektirir.
 	
 	```ruby
