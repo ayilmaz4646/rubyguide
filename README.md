@@ -144,7 +144,7 @@ metot çağrılarında **parantez kullanın**:
 	 
 	```
 * `and`, `or`, `not` yerine `&&`, `||`, `!` kullanınız.
-* Metot içeriği ve koşulları basit ise tek satır kullanım iyidir. Aksi takdirde 'tek satır' da yazacağım diye de b*kunu çıkarmayın.
+* Metot içeriği ve koşulları basit ise tek satır kullanım iyidir.
 
 	```ruby
 	# kötü
