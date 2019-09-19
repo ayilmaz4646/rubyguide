@@ -244,6 +244,8 @@ Kısaltılmış if yapısı da diyebiliriz( `if` kullanılmadan :) ).
   örn:
   ``` 
     not > 50 ? durum = 'geçtin' : durum = 'kaldın'
+    veya
+    durum = not > 50 ? 'geçtin' : 'kaldın'
   ```
   
 * Koşullar, kapsamlı ise ternary operatöründen`(?:)` kaçının. Tek Satırlık koşullarda, ternary operatörü tercih edin.
