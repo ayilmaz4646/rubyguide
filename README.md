@@ -33,7 +33,7 @@
 	end
 
 	```
-* Tek satırlık methot yazımlarından kaçının.
+* Tek satırlık metot yazımlarından kaçının.
 
 	```ruby
 	# kötü
