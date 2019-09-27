@@ -1,7 +1,7 @@
-## Metotlar
-### Metot Tanımları
+## Metodlar
+### Metod Tanımları
 
-* Metotun beklediği parametre(ler) varsa, `def` ile parantez kullanın. Eğer metot bir parametre beklemiyorsa, parantez kullanmanız gerekmez.
+* Metodun beklediği parametre(ler) varsa, `def` ile parantez kullanın. Eğer metod bir parametre beklemiyorsa, parantez kullanmanız gerekmez.
 
 	```ruby
 	def some_method
