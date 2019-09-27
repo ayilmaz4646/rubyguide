@@ -1,5 +1,5 @@
 ## Metotlar
-### Methot Tanımları
+### Metot Tanımları
 
 * Metotun beklediği parametre(ler) varsa, `def` ile parantez kullanın. Eğer metot bir parametre beklemiyorsa, parantez kullanmanız gerekmez.
 
