@@ -108,7 +108,7 @@ metot çağrılarında **parantez kullanın**:
 
 ### Koşullar
 
-* Eğer ` if/unless `metotunuz birden fazla satırdan oluşuyorsa (multi-line), Asla `then` kullanmayınız.
+* Eğer ` if/unless `metotunuz birden fazla satırdan oluşuyorsa (multi-line), asla `then` kullanmayınız.
 
 	```ruby
 	 # kötü
@@ -121,7 +121,7 @@ metot çağrılarında **parantez kullanın**:
 	   ...
 	 end
 	 ```
-* Eğer `while` veya `until` metotunuz, multi-line ise Asla `do` kullanmayınız.
+* Eğer `while` veya `until` metotunuz, multi-line ise asla `do` kullanmayınız.
 
 	```ruby
 	 # kötü
